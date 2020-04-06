@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+
+    <!-- hero ------------------------------------------------ -->
+    <section class="hero is-info">
+        <div class="hero-body">
+            <div class="hero-container">
+                <h1 class="title is-1">Weather Dashboard</h1>
+            </div>
+        </div>
+    </section>
+    <!-- CSS Flexbox grid container -->
+    <div class="container">
+        <!-- Row 1 -->
+        <div class="row">
+            <div class="col-3">
+                <!-- Bootstrap for the input and search button -->
+                <div class="input-group mb-3">
+                    <h2 class="cityP">Search for a City
+                        <input id="city-input" type="text" class="form-control" placeholder=""
+                            aria-label="Search for a city" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-primary" type="button" id="button">Search</button>
+                    </h2>
+                    <p class="cityName"></p>
+                </div>
+            </div>
+            <div class="col-9">
+                <!-- Bootstrap card for the current weather data -->
+                <!-- Row 2 -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="city card-title"></div>
+                        <div class="temp"></div>
+                        <div class="wind"></div>
+                        <div class="humidity"></div>
+                        <div class="uvIndex"></div>
+                    </div>
+                    <hr>
+                    <!-- Bootstrap card for the 5-day weather data -->
+                    <!-- Row 3 -->
+                    <div class="forecastCard">
+                        <div class="card-body">
+                            <h5 class="card-title">5-Day Forecast:</h5>
+                            <!-- Create 5 boxes to contain each day forecast -->
+                            <table>
+                                <tr>
+                                    <td>
+                                        <box class="box">
+                                            <p id="day1-date">Date</p>
+                                            <p id="day1-temp">Temp:</p>
+                                            <p id="day1-icon">""</p>
+                                            <p id="day1-hum">Humidity:</p>
+                                        </box>
+                                    </td>
+                                    <td>
+                                        <box class="box">
+                                            <p id="day2-date">Date</p>
+                                            <p id="day2-temp">Temp:</p>
+                                            <p id="day2-icon">""</p>
+                                            <p id="day2-hum">Humidity:</p>
+                                        </box>
+                                    </td>
+                                    <td>
+                                        <box class="box">
+                                            <p id="day3-date">Date</p>
+                                            <p id="day3-temp">Temp:</p>
+                                            <p id="day3-icon">""</p>
+                                            <p id="day3-hum">Humidity:</p>
+                                        </box>
+                                    </td>
+                                    <td class="col-md-2.4">
+                                        <box class="box">
+                                            <p id="day4-date">Date</p>
+                                            <p id="day4-temp">Temp:</p>
+                                            <p id="day4-icon">""</p>
+                                            <p id="day4-hum">Humidity:</p>
+                                        </box>
+                                    </td>
+                                    <td class="col-md-2.4">
+                                        <box class="box">
+                                            <p id="day5-date">Date</p>
+                                            <p id="day5-temp">Temp:</p>
+                                            <p id="day5-icon">""</p>
+                                            <p id="day5-hum">Humidity:</p>
+                                        </box>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Moment Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"
+        integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+    <script src="weather.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-right: 25px;
+    margin-left: 25px;
+    
+}
+.title {
+    text-align: center;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.cityP {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.cityName {
+    width: 300px;
+}
+
+section {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.card {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.forecastCard {
+width: fit-content;
+}
+
+.input-group {
+    width: 400px;
+    background-color: whitesmoke;
+    margin-top: 10px;
+}
+.form-control{
+    width: 200px;
+    margin-top: 10px;
+}
+.extremeUV {
+    background-color: purple;
+}
+
+.weatherIcon{
+    height: auto;
+     width: 3em;
+}
+
+.veryhighUV{
+    background:red ;
+}
+.highUV {
+    background: orange;
+}
+.mediumUV {
+    background: darkkhaki;
+}
+.goodUV {
+    background: green;
+}
+
+.uvIndex span span{
+    color:#fff
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    margin-right: 5px;
+    background-color:lightskyblue;
+    justify-content: space-between;
+
+}
+
+
+
+
+
