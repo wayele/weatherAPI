@@ -54,7 +54,7 @@ function getInfo(cityName) {
         // Create a variable to pull the lat and long from the response object
         var location = response.coord;
         // Use the location lat and long to build a new url for the uv index api call
-        var uvIndexurl = "http://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + location.lat + "&lon=" + location.lon;
+        var uvIndexurl = "https://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + location.lat + "&lon=" + location.lon;
         // Create an ajax call for the uv index data
         $.ajax({
             url: uvIndexurl,
@@ -80,7 +80,7 @@ function getInfo(cityName) {
 
         });
         // Create a variable to build the 5-day forecast url
-        var forecastURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=" + APIKey + "&units=imperial";
+        var forecastURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=" + APIKey + "&units=imperial";
         // Create an ajax call for the 5-day forecast data
         $.ajax({
             url: forecastURL,
@@ -102,7 +102,7 @@ function getInfo(cityName) {
             // console.log(day1temp);
             $('#day1-temp').text(day1temp + " °F");
             $('#day1-hum').text("Humidity: " + day1humidity + "%");
-            $('#day1-icon').html("<img class='weatherIcon' src='http://openweathermap.org/img/wn/" + day1icon + "@2x.png'>");
+            $('#day1-icon').html("<img class='weatherIcon' src='https://openweathermap.org/img/wn/" + day1icon + "@2x.png'>");
             // Day 2 of 5
             var day2data = forecastResponse.list[13].dt_txt;
             var day2date = moment(day2data).format('L');
@@ -112,7 +112,7 @@ function getInfo(cityName) {
             $('#day2-date').text(day2date);
             $('#day2-temp').text(day2temp + " °F");
             $('#day2-hum').text("Humidity: " + day2humidity + "%");
-            $('#day2-icon').html("<img class='weatherIcon' src='http://openweathermap.org/img/wn/" + day2icon + "@2x.png'>");
+            $('#day2-icon').html("<img class='weatherIcon' src='https://openweathermap.org/img/wn/" + day2icon + "@2x.png'>");
             // // Day 3 of 5
             var day3data = forecastResponse.list[21].dt_txt;
             var day3date = moment(day3data).format('L');
@@ -122,7 +122,7 @@ function getInfo(cityName) {
             $('#day3-date').text(day3date);
             $('#day3-temp').text(day3temp + " °F");
             $('#day3-hum').text("Humidity: " + day3humidity + "%");
-            $('#day3-icon').html("<img class='weatherIcon' src='http://openweathermap.org/img/wn/" + day3icon + "@2x.png'>");
+            $('#day3-icon').html("<img class='weatherIcon' src='https://openweathermap.org/img/wn/" + day3icon + "@2x.png'>");
             // // Day 4 of 5
             var day4data = forecastResponse.list[29].dt_txt;
             var day4date = moment(day4data).format('L');
@@ -132,7 +132,7 @@ function getInfo(cityName) {
             $('#day4-date').text(day4date);
             $('#day4-temp').text(day4temp + " °F");
             $('#day4-hum').text("Humidity: " + day4humidity + "%");
-            $('#day4-icon').html("<img class='weatherIcon' src='http://openweathermap.org/img/wn/" + day4icon + "@2x.png'>");
+            $('#day4-icon').html("<img class='weatherIcon' src='https://openweathermap.org/img/wn/" + day4icon + "@2x.png'>");
             // // Day 5 of 5
             var day5data = forecastResponse.list[37].dt_txt;
             var day5date = moment(day5data).format('L');
@@ -142,7 +142,7 @@ function getInfo(cityName) {
             $('#day5-date').text(day5date);
             $('#day5-temp').text(day5temp + " °F");
             $('#day5-hum').text("Humidity: " + day5humidity + "%");
-            $('#day5-icon').html("<img class='weatherIcon' src='http://openweathermap.org/img/wn/" + day5icon + "@2x.png'>");
+            $('#day5-icon').html("<img class='weatherIcon' src='https://openweathermap.org/img/wn/" + day5icon + "@2x.png'>");
 
         });
     });
