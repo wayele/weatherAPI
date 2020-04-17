@@ -1,4 +1,4 @@
-# Homework 6 - Weather Dashboard API App
+# Weather Dashboard API App
 The task is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
 
 # How it is Made
@@ -12,10 +12,12 @@ A html file containing the basic skeleton was used along with custom css, moment
 # Screenshot
 <img src="./assets/scrnshot.png">
 
-#Other details
-git clone git@github.com/wayele/weatherAPI
+# Other details
+APIs used from: https://openweathermap.org/api
 
+Project files are located: https://github.com/wayele/weatherAPI
 
+Deployed application link: https://wayele.github.io/weatherAPI
 ```
 
 ## Technologies Used
